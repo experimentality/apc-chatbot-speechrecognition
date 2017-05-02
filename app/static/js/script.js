@@ -1,6 +1,6 @@
 var accessToken = "47bae10e67094366891a6fc22f6fddca";
 var subscriptionKey = "ed4211907a764f7d8d2e3051f198a5ab";
-var baseUrl = "https://api.api.ai/v1/";
+var baseUrl = "https://api.api.ai/v2/";
 
 $(document).ready(function() {
   $("#input").keypress(function(event) {
