@@ -76,7 +76,7 @@ function send() {
 
       //JSON.stringify(text);
     //query: JSON.stringify([ text ]),
-      data: JSON.stringify({ "query": text, "lang": "es", "sessionID": "1234567"}),
+      body: JSON.stringify({ "query": text, "lang": "es", "sessionID": "1234567"}),
 
 
       success: function(data) {
