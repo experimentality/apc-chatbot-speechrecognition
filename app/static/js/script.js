@@ -78,14 +78,14 @@ function send() {
     //query: JSON.stringify([ text ]),
       //body: JSON.stringify({ "query": text, "lang": "es", "sessionID": "1234567"}),
     //data: JSON.parse({ "query": text, "lang": "es", "sessionID": "1234567"}),
-    data: { "query": JSON.stringify(text), "lang": "es", "sessionID": "1234567"},
+    body: "{ "query": text, "lang": "es", "sessionID": "1234567"}",
 
 
       success: function(data) {
       setResponse(JSON.stringify(data, undefined, 2));
     },
     error: function() {
-      setResponse("Internal Server Error");
+      setResponse("Lo siento, no pude procesar tu solicitud.");
     }
   });
   setResponse("Cargando respuesta...");
