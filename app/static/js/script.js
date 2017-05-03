@@ -59,7 +59,7 @@ function updateRec() {
 
 
 function send() {
-  var text = $("#input").val();
+  var text = JSON.stringify($("#input").val());
 
 //let apiaiRequest = apiAiService.textRequest(txt, {
 //    sessionId: sender
