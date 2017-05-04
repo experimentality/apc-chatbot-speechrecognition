@@ -64,10 +64,10 @@ function send() {
 //let apiaiRequest = apiAiService.textRequest(txt, {
 //    sessionId: sender
 //    });
-
+//20160701
   $.ajax({
     type: "POST",
-    url: baseUrl + "query?v=20160701",
+    url: baseUrl + "query?v=20150910",
     contentType: "application/json; charset=utf-8",
     dataType: "json",
     headers: {
