@@ -60,6 +60,7 @@ function updateRec() {
 
 function send() {
   var text = $("#input").val();
+  var txt = '{ "query": [ ' + text + ' ], "lang": "es", "sessionID": "1234567"}';
 
 //let apiaiRequest = apiAiService.textRequest(txt, {
 //    sessionId: sender
@@ -78,7 +79,7 @@ function send() {
     //query: JSON.stringify([ text ]),
       //body: JSON.stringify({ "query": text, "lang": "es", "sessionID": "1234567"}),
     //data: JSON.parse({ "query": text, "lang": "es", "sessionID": "1234567"}),
-    body: JSON.parse('{ "query": [ ' + text + ' ], "lang": "es", "sessionID": "1234567"}'),
+    body: JSON.parse(txt),
 
 
       success: function(data) {
