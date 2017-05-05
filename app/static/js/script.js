@@ -50,7 +50,7 @@ function switchRecognition() {
 }
 function setInput(text) {
   $("#input").val(text);
-  var tx = JSON.stringify({ "query": text, "timezone":"America/Bogota", "lang": "es", "sessionID": "1234567" });
+  var tx = { "query": text, "timezone":"America/Bogota", "lang": "es", "sessionID": "1234567" };
   console.log(tx);
   send();
 }
