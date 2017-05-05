@@ -82,7 +82,7 @@ function send() {
       //body: JSON.stringify({ "query": text, "lang": "es", "sessionID": "1234567"}),
     //data: JSON.parse({ "query": text, "lang": "es", "sessionID": "1234567"}),
     data: { 
-           "query": text, 
+           "query": "text", 
            "timezone":"America/Bogota", 
            "lang": "es", 
            "sessionID": "1234567" 
