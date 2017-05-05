@@ -85,7 +85,7 @@ function send() {
            "query":text, 
            "timezone":"America/Bogota", 
            "lang": "es", 
-           "sessionID": "14256388793526" 
+           "sessionID": "ed4211907a764f7d8d2e3051f198a5ab" 
           }),
 
 
