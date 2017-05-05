@@ -50,12 +50,13 @@ function switchRecognition() {
 }
 function setInput(text) {
   $("#input").val(text);
+  var tx = JSON.stringify({ "query": text, "timezone":"America/Bogota", "lang": "es", "sessionID": "1234567" });
+  console.log(tx);
   send();
 }
 function updateRec() {
   $("#rec").text(recognition ? "Parar" : "Hablar");
 }
-
 
 
 function send() {
