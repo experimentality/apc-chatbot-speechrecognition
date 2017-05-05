@@ -61,8 +61,8 @@ function updateRec() {
 
 function send() {
   var text = $("#input").val();
-  var tx = JSON.stringify({ "query": text, "timezone":"America/Bogota", "lang": "es", "sessionID": "1234567" });
-  console.log(tx);
+//  var tx = JSON.stringify({ "query": text, "timezone":"America/Bogota", "lang": "es", "sessionID": "1234567" });
+//  console.log(tx);
 
 //let apiaiRequest = apiAiService.textRequest(txt, {
 //    sessionId: sender
@@ -81,7 +81,7 @@ function send() {
     //query: JSON.stringify([ text ]),
       //body: JSON.stringify({ "query": text, "lang": "es", "sessionID": "1234567"}),
     //data: JSON.parse({ "query": text, "lang": "es", "sessionID": "1234567"}),
-    data: JSON.stringify({ "query": text, "timezone":"America/Bogota", "lang": "es", "sessionID": "1234567" }),
+    data: JSON.parse({ "query": text, "timezone":"America/Bogota", "lang": "es", "sessionID": "1234567" }),
 
 
       success: function(data) {
