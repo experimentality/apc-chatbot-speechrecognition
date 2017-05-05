@@ -5,14 +5,16 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
 
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}"></link>
+	<!--<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}"></link>-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
 
 </head>
 
 <body>
 	<div>
     <br><br>
-		<input id="input" type="text"> <button id="rec">Hablar</button>
+		<!--<input id="input" type="text"> <button id="rec">Hablar</button>-->
+		<a class="btn-floating btn-large waves-effect waves-light red" id="rec"><i class="material-icons">audio</i></a>
 		<br><br><br>Asesor - @PC Mayorista:<br> <textarea id="response" cols="40" rows="20"></textarea>
 	</div>
 </body>
