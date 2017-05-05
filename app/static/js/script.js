@@ -85,8 +85,8 @@ function send() {
 
 
       success: function(data) {
-        //var resp = data.fulfillment.speech;
-      setResponse(JSON.stringify(data, undefined, 2));
+        var resp = data[0].response.fulfillment.speech;
+      setResponse(JSON.stringify(resp));
     },
     error: function() {
       setResponse("Lo siento, no pude procesar tu solicitud.");
