@@ -85,7 +85,7 @@ function send() {
 
 
       success: function(data) {
-        var resp = data[0].response.fulfillment.speech;
+        var resp = data.response.fulfillment.speech;
       setResponse(JSON.stringify(resp));
     },
     error: function() {
