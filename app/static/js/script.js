@@ -93,9 +93,17 @@ function send() {
     }
   });
   setResponse("Cargando respuesta...");
+  
+  var msg = new SpeechSynthesisUtterance();
+  var voices = window.speechSynthesis.getVoices();
+  msg.voice = voices[10]; // Note: some voices don't support altering params
+  msg.text = text;
+  msg.lang = 'es-ES';
 }
 //*/
 
 function setResponse(val) {
   $("#response").text(val);
 }
+
+
