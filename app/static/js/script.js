@@ -91,7 +91,7 @@ function send() {
         var voices = window.speechSynthesis.getVoices();
         msg.voice = voices[10]; // Note: some voices don't support altering params
         msg.text = data.result.fulfillment.speech;
-        msg.lang = 'es-ES';
+        msg.lang = 'es-CO';
   speechSynthesis.speak(msg);
     },
     error: function() {
