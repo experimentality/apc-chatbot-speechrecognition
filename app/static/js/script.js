@@ -88,8 +88,8 @@ function send() {
         //var resp = data.response;
         setResponse(JSON.stringify(data.result.fulfillment.speech));
         var msg = new SpeechSynthesisUtterance();
-        var voices = window.speechSynthesis.getVoices();
-        msg.voice = voices[10]; // Note: some voices don't support altering params
+        //var voices = window.speechSynthesis.getVoices();
+        //msg.voice = voices[10]; // Note: some voices don't support altering params
         msg.text = data.result.fulfillment.speech;
         msg.lang = 'es-CO';
   speechSynthesis.speak(msg);
