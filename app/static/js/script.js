@@ -99,6 +99,7 @@ function send() {
   msg.voice = voices[10]; // Note: some voices don't support altering params
   msg.text = text;
   msg.lang = 'es-ES';
+  speechSynthesis.speak(msg);
 }
 //*/
 
