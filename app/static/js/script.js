@@ -55,7 +55,7 @@ function setInput(text) {
   send();
 }
 function updateRec() {
-  $("#rec").text(recognition ? "Parar" : "Hablar");
+  $("#rec").text(recognition ? "<a class="btn-floating btn-large waves-effect waves-light blue" id="rec"><i class="medium material-icons">pause</i></a>" : "<a class="btn-floating btn-large waves-effect waves-light blue" id="rec"><i class="medium material-icons">mic_none</i></a>");
 }
 
 
