@@ -55,7 +55,7 @@ function setInput(text) {
   send();
 }
 function updateRec() {
-  $("#rec").icon(recognition ? "pause" : "mic_none");
+  $("#rec").text(recognition ? "pause" : "mic_none");
 }
 
 
