@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-	<title>Asesor - Buyruru</title>
+	<title>Asesor</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
@@ -14,19 +14,23 @@
 <body>
 	<div>
     <br><br>
-		<br><br><h2>Asesor - Buyruru</h2><br><br> 
-		<input id="input" type="text" class="validate"><!--<button id="rec">Hablar</button>-->
+		<br><br><h2>Asesor</h2><br><br> 
+		<div class="input-field col s6">
+			<input id="input" type="text" class="validate"><!--<button id="rec">Hablar</button>-->
+			<label for="input" class="active">Tu solicitud</label><br><br>
+		</div> <br>
 		<a class="btn-floating btn-large waves-effect waves-light blue"><i id="rec" class="medium material-icons">mic_none</i></a>
 		 <!--<textarea id="response" cols="40" rows="20"></textarea>-->
-		<br><div class="row">
-    		<form class="col s12">
-      		<div class="row">
-        		<div class="input-field col s12">
-         		 <textarea id="response" class="materialize-textarea"></textarea><br>
-       		   <label for="response" class="active">Asesor:</label><br><br>
-      		  </div>
-     		 </div>
-  		  </form>
+		<br>
+		<div class="row">
+    			<form class="col s12">
+      				<div class="row">
+        				<div class="input-field col s6">
+         		 			<textarea id="response" class="materialize-textarea"></textarea><br>
+       		   				<label for="response" class="active">Asesor</label><br><br>
+      		  			</div>
+     		 		</div>
+  		  	</form>
   		</div>
 	</div>
 </body>
